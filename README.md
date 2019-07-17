@@ -57,6 +57,11 @@ git status
 git add pasta
 git commit -m "aqui coloco uma mensagem, tipo: comitando primeiro post" 
 git push -u origin master  
+git config --global user.name "Nome Sobrenome"   
+git config --global user.email "seu_email@email.com"
+ssh-keygen -t rsa -C "seu_email@email.com"
+notepad ~/.ssh/id_rsa.pub
+ssh -T git@github.com
 
 --Instalar Knex de forma global:
 npm i -g knex
